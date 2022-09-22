@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\bannerController;
@@ -69,7 +70,11 @@ Route::get('/switch',[adminController::class,'switch'])->name('switch');
 Route::get('/tab',[adminController::class,'tab'])->name('tab');
 Route::get('/table',[adminController::class,'table'])->name('table');
 Route::get('/typo',[adminController::class,'typo'])->name('typo');
+
+
 Route::group(['middleware'=>'admin_auth'],function(){
+
+
 Route::get('/dashboard',[adminController::class,'index'])->name('dashboard');
 Route::get('/logout',[adminController::class,'logout'])->name('logout');
 Route::get('/update',[adminController::class,'adminupdate'])->name('update');
@@ -148,16 +153,22 @@ Route::post('/updatefeaturedproductpost',[featuredproductController::class,'upda
 Route::get('/deletefeaturedproduct/{id}',[featuredproductController::class,'deletefeaturedproduct'])->name('deletefeaturedproduct');
 Route::get('/featuredproductinfo/{id}',[featuredproductController::class,'featuredproductinfo'])->name('featuredproductinfo');
 
+  
+    
 
 
 });
-Route::get('/auth/redirect',[SocialController::class,'redirect'])->name('redirect');
-Route::get('/auth/callback',[SocialController::class,'callback'])->name('callback');
-Route::get('/auth/google/redirect',[SocialController::class,'googleredirect'])->name('googleredirect');
+//social Login
+Route::get('/auth/callback',[SocialController::class,'gitcallback'])->name('gitcallback');
+Route::get('/auth/redirect',[SocialController::class,'gitredirect'])->name('gitredirect');
 Route::get('/auth/google/callback',[SocialController::class,'googlecallback'])->name('googlecallback');
+Route::get('/auth/google/redirect',[SocialController::class,'googleredirect'])->name('googleredirect');
 
 
+//api routes for external use
 
+Route::get('reset-password',[ApiController::class,'resetpassword'])->name('reset-password');
+Route::post('reset-passwordpost',[ApiController::class,'resetpasswordpost'])->name('reset-passwordpost');
 
 
 

@@ -9,7 +9,7 @@ class bannerController extends Controller
 {
     //
     public function bannerdetails(){
-        $banner =  Bannertable::all();
+        $banner =  Bannertable::paginate(2);
         return view('admin/showbanner',['data' => $banner]);
     }
 

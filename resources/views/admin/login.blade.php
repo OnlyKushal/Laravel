@@ -90,12 +90,15 @@
                                         <a href="{{route('registerget')}}">Sign Up Here</a>
                                     </p>
                                 </div>
+                                <div class="social-login-content">
+                                    <div class="social-button" align="center">
+                                        <a href="{{route('googleredirect')}}"><label class="au-btn au-btn--block au-btn--green m-b-20">sign in with Google</label></a>
+                                        <a href="{{route('gitredirect')}}"><label class="au-btn au-btn--block au-btn--blue2">sign in with git</label></a>
+                                    </div>
+                                </div>
                             </form>
                         </div>
-                        
                     </div>
-                    
-                        
                 </div>
                 <div class="row">
                     <div class="col-md-12">

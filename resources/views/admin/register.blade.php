@@ -90,12 +90,19 @@
                                         <input type="checkbox" name="aggree">Agree the terms and policy
                                     </label>
                                 </div>
-                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">register</button>
+                                <button class="au-btn au-btn--block au-btn--green m-b-5" type="submit">register</button>
                                 <div class="register-link">
                                     <p>
                                         Already have account?
                                         <a href="{{route('login')}}">Sign In</a>
                                     </p>
+                                </div>
+                               
+                                    <div>
+                                        <a href="{{route('googleredirect')}}"><label class="btn-google m-b-20"> <i class="fab fa-facebook-f"></i
+                                            >sign up with Google</label></a>
+                                        <a href="{{route('gitredirect')}}"><label class="au-btn au-btn--block au-btn--blue2">sign up with git</label></a>
+                                    </div>
                                 </div>
                             </form>
                            

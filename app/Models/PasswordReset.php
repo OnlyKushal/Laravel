@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Admin extends Model
+class PasswordReset extends Model
 {
     use HasFactory;
-    protected $fillable=[
-        'username',
+    const UPDATED_AT = NULL;
+    protected $fillable = [
         'email',
-        'password',
-        'image',
-        'role',
-        'social_pass',
-        'auth_type'
+        'token',
+        'created_at',
     ];
+
+    
 }

@@ -18,10 +18,20 @@ use App\Http\Controllers\ApiController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('usershow',[ApiController::class,'usershow'])->name('usershow');
+
+Route::middleware('auth:sanctum')->group(function(){
+    Route::get('usershow',[ApiController::class,'usershow'])->name('usershow');
+    Route::get('finduser/{email}',[ApiController::class,'finduser'])->name('finduser');
+    Route::post('upadateuserdetails',[ApiController::class,'upadateuserdetails'])->name('upadateuserdetails');
+    Route::post('logouta',[ApiController::class,'logout'])->name('logouta');
+    Route::post('cahangepass',[ApiController::class,'cahangepass'])->name('cahangepass');
+});
+
+Route::post('forgetpass',[ApiController::class,'forgetpass'])->name('forgetpass');
+// Route::get('usershow',[ApiController::class,'usershow'])->name('usershow')->middleware('auth:sanctum');
+Route::post('userlogin',[ApiController::class,'userlogin'])->name('userlogin');
 Route::post('userregistration',[ApiController::class,'userregistration'])->name('userregistration');
-Route::post('upadateuserdetails',[ApiController::class,'upadateuserdetails'])->name('upadateuserdetails');
 Route::get('deleteuser/{email}',[ApiController::class,'deleteuser'])->name('deleteuser');
-Route::get('finduser/{email}',[ApiController::class,'finduser'])->name('finduser');
+// Route::get('finduser/{email}',[ApiController::class,'finduser'])->name('finduser');
 
 

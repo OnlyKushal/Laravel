@@ -13,6 +13,9 @@
             }
             }
 </script>
+<style>
+    .w-5{display: none;}
+</style>
 </head>
 
 <body class="animsition">
@@ -82,6 +85,8 @@
                                                 @endforeach   
                                             </tbody>
                                         </table>
+                                        
+                                        <span>{{$data->links()}}</span>
                                         
                                 </div>
                              
