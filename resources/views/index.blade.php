@@ -1,425 +1,828 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
-    <head>
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="SITE KEYWORDS HERE" />
-        <meta name="description" content="">
-        <meta name='copyright' content=''>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Title -->
-        <title>Living Space</title>
-        <!-- Favicon -->
- 
-         <link rel="icon" type="image/png" href="https://livingspacecreation.com/images/32-X-32.png"/>
-        <!-- Web Font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<html lang="en">
 
-        <!-- Bootstrap CSS -->
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-        <!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
-        <!-- Fancy Box CSS -->
-        <link rel="stylesheet" href="{{asset('assets/css/jquery.fancybox.min.css')}}">
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
-        <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
-        <!-- Slick Nav CSS -->
-        <link rel="stylesheet" href="{{asset('assets/css/slicknav.min.css')}}">
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
+  <head>
 
-        <!-- Learedu Stylesheet -->
-        <link rel="stylesheet" href="{{asset('assets/css/normalize.css')}}">
-        <link rel="stylesheet" href="{{asset('assets/css/style.css?v=0.3')}}">
-        <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
-        <link href="{{asset('assets/fonts/fontawesome-web/css/all.css?v0.3')}}" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-        <!-- Learedu Color -->
-        <link rel="stylesheet" href="{{asset('assets/css/color/color6.css')}}">
-        <!--<link rel="stylesheet" href="css/color/color2.css">-->
-        <!--<link rel="stylesheet" href="css/color/color3.css">-->
-        <!--<link rel="stylesheet" href="css/color/color4.css">-->
-        <!--<link rel="stylesheet" href="css/color/color5.css">-->
-        <!--<link rel="stylesheet" href="css/color/color6.css">-->
-        <!--<link rel="stylesheet" href="css/color/color7.css">-->
-        <!--<link rel="stylesheet" href="css/color/color8.css">-->
-    </head>
-    <body>
+    <title>Education Meeting HTML5 Template</title>
 
-        <!-- Book Preloader -->
-        <div class="book_preload">
-            <div class="book">
-                <div class="book__page"></div>
-                <div class="book__page"></div>
-                <div class="book__page"></div>
-            </div>
-        </div>
-        <!--/ End Book Preloader -->
-        <!-- Header -->
-    @include('common/menu')
-        <!-- End Header -->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Slider Area -->
-        <section class="home-slider">
-            <div class="slider-active">
-                
-                <!-- Single Slider -->
-                @foreach ($data as $item)
-                        <div class="single-slider overlay" style="background-image:url('{{asset('bannerimages/'.$item->image)}}')" data-stellar-background-ratio="0.5">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-8 offset-lg-4 col-md-8 offset-md-4 col-12">
-                                        <div class="slider-text text-right">
-                                            <h1>{{$item->title}}</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                @endforeach
-            </div>
-                
-        </section>
-        <!--/ End Slider Area -->
-        <!-- Events -->
-        <section class="events section pt0 widget-style-1 pb30">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body>
+
+  <!-- Sub Header -->
+  <div class="sub-header">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="event-slider">
-                    <!-- Single Event -->
-                    <div class="single-event">
-                        <div class="event-content">
-                            <div class="meta"> 
-                                <i class="fas fa-clipboard-list font-30"></i>
-                            </div>
-                            <h4 class="mb0 font-22">First Visit</h4>
-                            <p class="font-13">During the first visit, our personnel who will be your personal designer take accurate measurements.. <a href="#">more</a></p>
-                        </div>
-                    </div>
-                    <!--/ End Single Event -->
-                    <!-- Single Event -->
-                    <div class="single-event">
-                        <div class="event-content">
-                            <div class="meta"> 
-                                <i class="fas fa-chalkboard-teacher font-30"></i>
-                            </div>
-                            <h4 class="mb0 font-22">Understand</h4>
-                            <p class="font-13">We are keen to understand and interpret your individual needs. Our expert designers will take.. <a href="#">more</a></p>
-                        </div>
-                    </div>
-                    <!--/ End Single Event -->
-                    <!-- Single Event -->
-                    <div class="single-event">
-                        <div class="event-content">
-                            <div class="meta"> 
-                                <i class="fas fa-shipping-fast font-30"></i>
-                            </div>
-                            <h4 class="mb0 font-22">Fast Paced</h4>
-                            <p class="font-13">In this modern, fast paced world we realize the importance of your time. That's why we are.. <a href="#">more</a></p>
-                        </div>
-                    </div>
-                    <!--/ End Single Event -->
-                    <div class="single-event">
-                        <div class="event-content">
-                            <div class="meta"> 
-                                <i class="fas fa-handshake font-30"></i>
-                            </div>
-                            <h4 class="mb0 font-22">Perfection</h4>
-                            <p class="font-13">We can proudly say that no one can match our installation experts in terns of perfection and speed.. <a href="#">more</a></p>
-                        </div>
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p>This is an educational <em>HTML CSS</em> template by TemplateMo website.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          Edu Meeting
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li><a href="meetings.html">Meetings</a></li>
+                          <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Pages</a>
+                              <ul class="sub-menu">
+                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
+                                  <li><a href="meeting-details.html">Meeting Details</a></li>
+                              </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="#courses">Courses</a></li> 
+                          <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/course-video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              <h6>Hello Students</h6>
+              <h2>Welcome to Education</h2>
+              <p>This is an edu meeting HTML CSS template provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_blank">TemplateMo website</a>. This is a Bootstrap v5.1.3 layout. The video background is taken from Pexels website, a group of young people by <a rel="nofollow" href="https://www.pexels.com/@pressmaster" target="_blank">Pressmaster</a>.</p>
+              <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+              </div>
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+          
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-01.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Education</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-02.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Teachers</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-03.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Students</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-02.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Online Meeting</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-03.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Best Networking</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Upcoming Meetings</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories">
+            <h4>Meeting Catgories</h4>
+            <ul>
+              <li><a href="#">Sed tempus enim leo</a></li>
+              <li><a href="#">Aenean molestie quis</a></li>
+              <li><a href="#">Cras et metus vestibulum</a></li>
+              <li><a href="#">Nam et condimentum</a></li>
+              <li><a href="#">Phasellus nec sapien</a></li>
+            </ul>
+            <div class="main-button-red">
+              <a href="meetings.html">All Upcoming Meetings</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>$22.00</span>
+                  </div>
+                  <a href="meeting-details.html"><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>10</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>New Lecturers Meeting</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>$36.00</span>
+                  </div>
+                  <a href="meeting-details.html"><img src="assets/images/meeting-02.jpg" alt="Online Teaching"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>24</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Online Teaching Techniques</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>$14.00</span>
+                  </div>
+                  <a href="meeting-details.html"><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>26</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Higher Education Conference</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <div class="price">
+                    <span>$48.00</span>
+                  </div>
+                  <a href="meeting-details.html"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>30</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Student Training Meetup</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>APPLY FOR BACHELOR DEGREE</h3>
+                <p>You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout.</p>
+                <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>APPLY FOR BACHELOR DEGREE</h3>
+                <p>You are not allowed to redistribute the template ZIP file on any other template website. Please contact us for more information.</p>
+                <div class="main-button-yellow">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordions is-first-expanded">
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>About Edu Meeting HTML Template</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>If you want to get the latest collection of HTML CSS templates for your websites, you may visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">Too CSS website</a>. If you need a working contact form script, please visit <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more info.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="our-features section widget-style-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-                
-            </div>
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="widget-box">
-                    <img src="{{asset('assets/images/small-banner1.jpg')}}" alt="" class="img-fluid">
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>HTML CSS Bootstrap Layout</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
                 </div>
-            </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed vulputate augue interdum vitae. Aliquam a elit massa.<br><br>
+                        Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula, ut feugiat ex erat nec mauris. Donec viverra velit eget lectus sollicitudin tincidunt.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>Please tell your friends</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur velit.<br><br>
+                        Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam volutpat luctus. Nullam sodales ipsum ac neque ultricies varius.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion last-accordion">
+                <div class="accordion-head">
+                    <span>Share this to your colleagues</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et malesuada fames ac ante ipsum primis in faucibus.<br><br>
+                        Sed eleifend metus sit amet magna tristique, posuere laoreet arcu semper. Nulla pellentesque ut tortor sit amet maximus. In eu libero ullamcorper, semper nisi quis, convallis nisi.</p>
+                    </div>
+                </div>
+            </article>
         </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-
-
-<section class="events section widget-style-4">
-    <div class="widget-style-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 font-30 text-center mb20 color-white">Featured Products</div>
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Our Popular Courses</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-courses-item owl-carousel">
+            <div class="item">
+              <img src="assets/images/course-01.jpg" alt="Course One">
+              <div class="down-content">
+                <h4>Morbi tincidunt elit vitae justo rhoncus</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$160</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
+            <div class="item">
+              <img src="assets/images/course-02.jpg" alt="Course Two">
+              <div class="down-content">
+                <h4>Curabitur molestie dignissim purus vel</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$180</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-03.jpg" alt="">
+              <div class="down-content">
+                <h4>Nulla at ipsum a mauris egestas tempor</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$140</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-04.jpg" alt="">
+              <div class="down-content">
+                <h4>Aenean molestie quis libero gravida</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$120</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-01.jpg" alt="">
+              <div class="down-content">
+                <h4>Lorem ipsum dolor sit amet adipiscing elit</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$250</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-02.jpg" alt="">
+              <div class="down-content">
+                <h4>TemplateMo is the best website for Free CSS</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$270</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-03.jpg" alt="">
+              <div class="down-content">
+                <h4>Web Design Templates at your finger tips</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$340</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-04.jpg" alt="">
+              <div class="down-content">
+                <h4>Please visit our website again</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$360</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-01.jpg" alt="">
+              <div class="down-content">
+                <h4>Responsive HTML Templates for you</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$400</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-02.jpg" alt="">
+              <div class="down-content">
+                <h4>Download Free CSS Layouts for your business</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$430</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-03.jpg" alt="">
+              <div class="down-content">
+                <h4>Morbi in libero blandit lectus cursus</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$480</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-04.jpg" alt="">
+              <div class="down-content">
+                <h4>Curabitur molestie dignissim purus</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>$560</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>A Few Facts About Our University</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
                 <div class="col-12">
-                    <div class="event-slider">
-                        <!-- Single Event -->
-                        @foreach ($data2 as $item2)
-                            
-                        <div class="single-event">
-                            <div class="event-content products">
-                                <div class="products-img" ><img src="{{asset('productimage/'.$item2->image)}}" alt="" class="img-fluid"></div>
-                                <div class="products-body"><a href="#">{{$item2->title}}</a></div>
-                            </div>
-                        </div>
-                        <!--/ End Single Event -->
-                        <!-- Single Event -->
-                        @endforeach
-                    </div>
+                  <div class="count-area-content percentage">
+                    <div class="count-digit">94</div>
+                    <div class="count-title">Succesed Students</div>
+                  </div>
                 </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">126</div>
+                    <div class="count-title">Current Teachers</div>
+                  </div>
+                </div>
+              </div>
             </div>
-
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content new-students">
+                    <div class="count-digit">2345</div>
+                    <div class="count-title">New Students</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">32</div>
+                    <div class="count-title">Awards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img src="assets/images/play-icon.png" alt=""></a>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-
-
-<section class="our-features section widget-style-6">
+  <section class="contact-us" id="contact">
     <div class="container">
-        <div class="row">
-            <div class="col-12 font-30 text-center mb20 wow zoomIn">
-                Why Us
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon1.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title">Creativity & In House Design</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon2.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">3D Modelling</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon3.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">Wide Range</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon4.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">Space Utilisation</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon5.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">Experience and Efficiency</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon6.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">Hassles Free</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon7.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">Time line of delidery</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon8.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">Budget and Reasonable pricing</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="card text-center">
-                    <img src="{{asset('assets/images/icon9.png')}}" class="img-fluid" alt="..." width="250">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase">After Sales Service</h5>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>010-020-0340</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <span>info@meeting.edu</span>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+              </li>
+              <li>
+                <h6>Website URL</h6>
+                <span>www.meeting.edu</span>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+    <div class="footer">
+      <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
+          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+    </div>
+  </section>
 
-       
-    <form action="{{route('enquiry')}}" method="POST">
-        @csrf
-        @include('common\enquiryform')
-    </form>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Footer -->
-        <footer class="footer overlay section widget-style-8">
-            <!-- Footer Top -->
-            <div class="footer-top pt20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- About -->
-                            <div class="single-widget about">
-                                <div class="logo mb20"><a href="#"><img src="{{asset('assets/images/logo2.png')}}" alt="#"></a></div>
-                                <ul class="social text-left mb20">
-                                     <li><a href="https://www.facebook.com/livingspacecreation" target="_blank" class="bg-fb"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/livingspacecreation/" target="_blank" class="bg-instg"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCXNK-I2ltcqykQK-64x3U6w" target="_blank" class="bg-youtube"><i class="fab fa-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Useful Links -->
-                            <div class="single-widget useful-links">
-                                <h2>Address</h2>
-                                <p class="mb0"><b>Kolkata:</b></p>
-                                <p class="lineheight16">225, Block A, Laketown Near Swimming Pool, Kolkata - 700089</p>
-                                <p class="mb0"><b>Siliguri:</b></p>
-                                <p class="lineheight16">96, Nazrul Sarani, Ashrampara, Siliguri - 734001</p>
-<p><i class="fas fa-envelope"></i> <a href="mailto:livingspacekolkata@gmail.com">livingspacekolkata@gmail.com</a></p>
-<p><i class="fas fa-mobile-alt"></i> +91 98320 44990/ +91 89448 88717</p>
-                            </div>
-                            <!--/ End Useful Links -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Latest News -->
-                            <div class="single-widget latest-news">
-                                <h2>Our Services</h2>
-                                <ul>
-                                    <li class="color-white"><b>Residential Interior</b></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="{{route('livingroom')}}">Living Room</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="{{route('diningroom')}}">Dining Room</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="{{route('bedroom')}}">Bed Room</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="{{route('kitchen')}}">Kitchen</a></li>
-                                    <li class="color-white"><b>Commercial Interior</b></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="{{route('showroominterior')}}">Showroom Interior</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="{{route('hotelrestaurant')}}">Hotel & Restaurant Interior</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="{{route('corporateoffice')}}">Corporate Office Interior</a></li>
-                                </ul>
-                            </div>
-                            <!--/ End Latest News -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <!-- Newsletter -->
-                            <div class="single-widget newsletter">
-                                <h2>Services we offer</h2>
-                                <ul>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="#">First Visit</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="#">Understand</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="#">Fast Paced</a></li>
-                                    <li><i class="fas fa-angle-right mr10 color-white"></i><a href="#">Perfection</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/ End Footer Top -->
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bottom-head">
-                                <div class="row">
-                                    <div class="col-12 footer-link3 text-center">
-                                        <a href="{{route('index')}}">Home</a>
-                                        <a href="{{route('aboutus')}}">About Us</a>
-                                        <a href="{{route('termsconditions')}}">Terms & Conditions</a>
-                                        <a href="{{route('contact')}}">Contact Us</a>
-                                    </div>
-                                    <div class="col-12">
-                                        <!-- Copyright -->
-                                        <div class="text-center mt0">
-                                            <p>© Copyright 2021 www.livingspacecreation.com. All Rights Reserved</p>
-                                        </div>
-                                        <!--/ End Copyright -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/ End Footer Bottom -->
-        </footer>
-        <!--/ End Footer -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J695EKLB7F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
 
-  gtag('config', 'G-J695EKLB7F');
-</script>
-        <!-- Jquery JS-->
-        <script src="{{asset('assets/js/jquery.min.js')}}"></script>
-        <script src="{{asset('assets/js/jquery-migrate.min.js')}}"></script>
-        <!-- Popper JS-->
-        <script src="{{asset('assets/js/popper.min.js')}}"></script>
-        <!-- Bootstrap JS-->
-        <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-        <!-- Jquery Steller JS -->
-        <script src="{{asset('assets/js/jquery.stellar.min.js')}}"></script>
-        <!-- Particle JS -->
-        <script src="{{asset('assets/js/particles.min.js')}}"></script>
-        <!-- Fancy Box JS-->
-        <script src="{{asset('assets/js/facnybox.min.js')}}"></script>
-        <!-- Magnific Popup JS-->
-        <script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
-        <!-- Masonry JS-->
-        <script src="{{asset('assets/js/masonry.pkgd.min.js')}}"></script>
-        <!-- Circle Progress JS -->
-        <script src="{{asset('assets/js/circle-progress.min.js')}}"></script>
-        <!-- Owl Carousel JS-->
-        <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
-        <!-- Waypoints JS-->
-        <script src="{{asset('assets/js/waypoints.min.js')}}"></script>
-        <!-- Slick Nav JS-->
-        <script src="{{asset('assets/js/slicknav.min.js')}}"></script>
-        <!-- Counter Up JS -->
-        <script src="{{asset('assets/js/jquery.counterup.min.js')}}"></script>
-        <!-- Easing JS-->
-        <script src="{{asset('assets/js/easing.min.js')}}"></script>
-        <!-- Wow Min JS-->
-        <script src="{{asset('assets/js/wow.min.js')}}"></script>
-        <!-- Scroll Up JS-->
-        <script src="{{asset('assets/js/jquery.scrollUp.min.js')}}"></script>
-        <!-- Google Maps JS -->
-        <script src="http://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
-        <script src="{{asset('assets/js/gmaps.min.js')}}"></script>
-        <!-- Main JS-->
-        <script src="{{asset('assets/js/main.js')}}"></script>
-    </body>
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</body>
 </html>
