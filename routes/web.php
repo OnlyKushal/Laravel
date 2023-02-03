@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 Route::controller(UserController::class)->group(function(){
     Route::get('index','index')->name('index');
+    
 });
